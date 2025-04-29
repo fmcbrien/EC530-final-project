@@ -6,7 +6,7 @@ from flask import Flask, request, render_template_string
 #setup
 app = Flask(__name__)
 DATABASE = 'documents.db'
-openai.api_key = os.getenv() # key
+openai.api_key = os.getenv() # add your key
 
 # create table in the DB if it doesnt already exist
 def init_db():
